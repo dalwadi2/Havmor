@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="dalwadi.harsh.app.Cart">
+
+
+        <!--Drop here all the items of activity-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/myitemstext"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click here"
+            android:id="@+id/cartmy"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/mypricetext"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/cartmy"
+            android:layout_alignStart="@+id/cartmy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/mytt"
+            android:layout_below="@+id/mypricetext"
+            android:layout_toRightOf="@+id/cartmy"
+            android:layout_toEndOf="@+id/cartmy"
+            android:layout_marginTop="202dp" />
+    </RelativeLayout>
+</LinearLayout>
+
+
+

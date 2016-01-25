@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="dalwadi.harsh.app.Sundae_Tub">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#DCDCDC"
+            android:onClick="cart"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:text="Total Items :"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/grandtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="0"
+                android:textColor="#3178ff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                android:text="Cart >>"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/sundaetubgrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:columnWidth="120dp"
+            android:horizontalSpacing="5dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="spacingWidthUniform"
+            android:verticalSpacing="10dp" />
+
+        <!--Drop here all the items of activity-->
+
+
+        <!--Drop here all the items of activity-->
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+

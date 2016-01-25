@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/DrawerLayout"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="7dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"></include>
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="dalwadi.harsh.app.MainActivity">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#DCDCDC"
+                android:onClick="cart">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Total Items :"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/grandtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="0"
+                    android:textColor="#3178ff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Cart >>"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <dalwadi.harsh.library.Indicators.PagerIndicator
+                android:id="@+id/custom_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                custom:selected_color="#0095BF"
+                custom:selected_drawable="@drawable/bird"
+                custom:selected_height="6dp"
+                custom:selected_padding_left="5dp"
+                custom:selected_padding_right="5dp"
+                custom:selected_width="6dp"
+                custom:shape="oval"
+                custom:unselected_color="#55333333"
+                custom:unselected_height="6dp"
+                custom:unselected_padding_left="5dp"
+                custom:unselected_padding_right="5dp"
+                custom:unselected_width="6dp" />
+
+            <dalwadi.harsh.library.Indicators.PagerIndicator
+                android:id="@+id/custom_indicator2"
+                style="@style/AndroidImageSlider_Corner_Oval_Orange"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginBottom="20dp" />
+
+            <ListView
+                android:id="@+id/transformers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/slider"
+                android:layout_below="@+id/slider"
+                android:visibility="invisible"></ListView>
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/transformers"
+                android:layout_centerHorizontal="true"
+                android:columnWidth="130dp"
+                android:horizontalSpacing="5dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="spacingWidthUniform"
+                android:verticalSpacing="5dp" />
+
+            <dalwadi.harsh.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/linearLayout"
+                custom:auto_cycle="true"
+                custom:indicator_visibility="visible"
+                custom:pager_animation="Accordion"
+                custom:pager_animation_span="1100" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#ffffff"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.v4.widget.DrawerLayout>
+
+

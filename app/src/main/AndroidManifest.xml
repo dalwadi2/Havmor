@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dalwadi.harsh.havmor">
+
+    <uses-sdk
+        android:maxSdkVersion="22"
+        android:minSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hvmorlogo"
+        android:label="@string/app_name"
+
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ManualAddress"
+            android:label="Manual Address"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Address_view">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Address_view" />
+        </activity>
+        <activity
+            android:name=".Address_view"
+            android:screenOrientation="portrait"
+            android:label="Address List">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Ice_Cream_Scoops"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_ice__cream__scoops"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Milk_Shakes"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_milk__shakes"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Roll_cuts"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_roll__cuts"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Candies"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_candies"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Blockbuster_Bar"
+            android:label="@string/title_activity_blockbuster__bar"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Havmor_Specials"
+            android:label="@string/title_activity_havmor__specials"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Topo_Cones"
+            android:label="@string/title_activity_topo__cones"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Sundae_Tub"
+            android:label="@string/title_activity_sundae__tub"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Party_Packs"
+            android:label="@string/title_activity_party__packs"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Cart"
+            android:label="@string/title_activity_cart"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Privacy_policy"
+            android:label="@string/title_activity_privacy_policy"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
